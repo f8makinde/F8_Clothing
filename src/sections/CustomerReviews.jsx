@@ -1,8 +1,10 @@
 
+import { useState } from "react";
 import ReviewCard from "../components/ReviewCard";
 import { reviews } from "../constants";
 
 const CustomerReviews = () => {
+  const [index, setIndex] = useState(0)
   return (
     <section className='max-container'>
       <h3 className='font-palanquin text-center text-4xl font-bold'>
